@@ -1,0 +1,603 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none;
+}
+
+body {
+  background: #eff1fa;
+  overflow-x: hidden !important;
+}
+
+.separatePosts {
+  animation: LoadingAnimation 0.75s;
+  animation-iteration-count: 1;
+}
+
+.no-transition * {
+  transition: none !important;
+}
+
+/* Navbar */
+
+.navbar-index {
+  z-index: 99;
+  width: 99vw;
+  margin-inline: auto;
+}
+.navBar {
+  background-color: #eff1fa;
+  box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.2);
+  height: 60px;
+  padding-block: 5px;
+  z-index: 99;
+}
+.navLogo {
+  background: linear-gradient(to right, #fb0270, #020eff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: serif;
+  font-weight: 500;
+  color: transparent;
+  text-shadow: 2px 2px 2px gray;
+  z-index: 99;
+}
+.navLogoImg {
+  padding-bottom: 6px;
+  height: 30px;
+  width: 30px;
+}
+.card-img-top {
+  flex-grow: 2;
+}
+.image-container {
+  transform: scale(1.03);
+}
+
+/* nav Logo */
+
+.profile {
+  height: 30px;
+  width: 30px;
+  object-fit: center;
+  object-position: bottom;
+  cursor: pointer !important;
+}
+
+.search {
+  cursor: pointer;
+  transition: linear 0.3s;
+}
+.hamberger {
+  cursor: pointer;
+  transition: linear 0.2s;
+}
+.fa-xmark {
+  transform: scale(1.5);
+}
+.hamberger:hover,
+.search:hover {
+  transform: scale(1.1);
+}
+
+/* side Bar */
+
+.content {
+  padding: 20px;
+}
+
+/* Add this to your App.css or ResponsiveApp.css */
+.disabled-link {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background: #eff1fa !important;
+  color: black;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding-top: 60px;
+  font-weight: 500;
+  overflow-y: scroll;
+}
+.sidebar_ul hr {
+  color: gray;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-content ul li {
+  margin: 15px 0;
+}
+
+.sidebar-content ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  backdrop-filter: blur(5px);
+  display: none;
+}
+
+.blur-background.active {
+  display: block;
+}
+
+.sidebar_hover:hover {
+  color: rgb(172, 31, 233);
+  transition: 0.2s linear;
+}
+
+/* middleBar */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-block: 10px;
+  backdrop-filter: blur(10px);
+  z-index: 1040;
+}
+
+.centered-div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: fit-content;
+  background-color: white;
+  z-index: 1050;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  background: #e7e7e7;
+}
+.select-container {
+  height: 5vh;
+  overflow-x: hidden;
+}
+
+/* hero Section */
+
+.header {
+  background: url(../../assets/FiveSlide.webp);
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  margin-top: 50px;
+}
+.header div:first-child h1 {
+  color: skyblue;
+}
+
+/* Card Section */
+
+.card_image {
+  max-height: 20rem;
+  min-height: 19rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  border: none !important;
+  cursor: pointer;
+}
+.card_banner {
+  background-color: whitesmoke;
+  padding-inline: 2px;
+  padding-block: 2px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 20rem;
+  min-width: 15rem;
+  background: transparent;
+  border: none;
+  transition: 0.3s linear;
+  padding: 2px;
+}
+.card_banner:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.btn_banner {
+  width: 100%;
+  background: #103652;
+  color: white;
+  margin-top: 10px;
+}
+.btn_banner:hover {
+  color: white;
+}
+
+/* !Accordian/Filter Section */
+
+.location {
+  color: #103652;
+}
+.location:hover {
+  color: #e46fa4;
+}
+button {
+  transition: background-color 0.8s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(128 128 128 / 20%);
+}
+.accordionButton:hover {
+  color: #e46fa4;
+}
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.accordion-button:after {
+  background-image: none !important;
+  width: 0;
+}
+
+/* Content */
+
+.content {
+  height: fit-content;
+  padding-block: 5px;
+  box-shadow: 2px 2px 5px gray;
+  font-size: 0.8rem;
+}
+
+/*Posts Section  */
+
+.separatePosts {
+  color: #103652;
+}
+.separatePosts:hover {
+  box-shadow: 4px 4px 20px gray !important;
+  transition: 0.5s linear;
+  transform: scale(1.02);
+}
+
+/* Categories Section */
+
+.selectCategories {
+  height: 35px;
+  width: 516px !important;
+}
+
+/* Post Ad section */
+
+.postAdWidth {
+  width: 40%;
+}
+.inCallWidth {
+  width: 33%;
+}
+.inputCity {
+  width: 25% !important;
+}
+
+/* Profile Section */
+
+.profileImage {
+  width: 90px;
+  height: 90px;
+}
+.AllPosts {
+  /* background-color: #e4e4e4; */
+  color: #103652;
+  padding: 0 !important;
+}
+
+/* Activity Button */
+
+.activityBtn:active {
+  background-color: #103652;
+}
+.tableRow {
+  background-color: #103652 !important;
+  border-color: white;
+}
+
+/* Separate Items Page */
+
+.ItemsShortScreen {
+  display: none !important;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: black;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: gray !important;
+}
+
+/* App.css or your preferred CSS file */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+.modal-images {
+  width: 40%;
+}
+
+.modal-content {
+  width: 80%;
+  height: fit-content;
+  overflow-y: scroll;
+  /* background:white; */
+  /* background:transparent; */
+  padding: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-block: 20px;
+  overflow-y: hidden;
+  z-index: 999;
+  padding-block: 20px;
+}
+
+.blur-background {
+  filter: blur(8px);
+}
+
+/* Modal Css*/
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  color: rgb(31, 1, 150);
+}
+
+.modal-buttons button {
+  padding-inline: 30px;
+  padding-block: 10px;
+}
+
+.ModalLogo {
+  width: 100px;
+}
+
+.searchBarXmark:hover {
+  color: gray;
+}
+
+.overlay-black {
+  background: transparent !important;
+  border: none !important;
+  height: 70% !important;
+}
+.swiper-pagination-bullet {
+  background-color: whitesmoke !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #e46fa4 !important;
+}
+
+/* MyAds Css */
+
+.myAdsLinks {
+  cursor: pointer;
+}
+.myadsBox {
+  height: 250px !important;
+}
+
+.myAddFilterBtn:focus,
+.myAddFilterBtn:active {
+  border: none;
+}
+form-control:focus,
+form-control:active {
+  border: none;
+  border-color: transparent;
+}
+.myAdsButton {
+  font-size: 12px !important;
+  padding-inline: 10px !important;
+  padding-top: 4px !important;
+}
+
+/* Image count and Tap to big */
+.image-container {
+  padding-inline: 8px;
+  padding-block: 4px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute !important;
+  bottom: 5px;
+  left: 10px;
+  z-index: 99;
+}
+.TapToView {
+  position: absolute !important;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  z-index: 1;
+  text-shadow: 2px 2px 2px gray;
+  cursor: pointer !important;
+}
+
+/* BreadCumb In Posts  */
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  font-size: 18px;
+  color: #f35199;
+  font-weight: bolder !important;
+}
+
+.Errorpage {
+  transform: scale(0.8);
+  height: 400px;
+}
+/* loader Css */
+
+.loader {
+  overflow: hidden;
+  position: relative;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    110deg,
+    rgba(227, 227, 227, 0) 0%,
+    rgba(227, 227, 227, 0) 40%,
+    rgba(227, 227, 227, 0.5) 50%,
+    rgba(227, 227, 227, 0) 60%,
+    rgba(227, 227, 227, 0) 100%
+  );
+  animation: gradient-animation 1.2s linear infinite;
+}
+
+.loader .wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.loader .wrapper > div {
+  background-color: #cacaca;
+}
+
+.loader .circle {
+  width: 318px;
+  height: 300px;
+}
+
+.loader .line-1,
+.loader .line-2,
+.loader .line-3,
+.loader .line-4 {
+  height: 10px;
+  background-color: #cacaca;
+}
+
+.loader .line-1 {
+  width: 90px;
+  height: 30px;
+  top: 310px;
+  left: 10px;
+  position: absolute;
+}
+
+.loader .line-2 {
+  width: 150px;
+  top: 350px;
+  left: 10px;
+  position: absolute;
+}
+
+.loader .line-3 {
+  width: 90%;
+  top: 380px;
+  left: 10px;
+  position: absolute;
+}
+
+.loader .line-4 {
+  width: 92%;
+  top: 80px;
+  left: 0;
+  position: absolute;
+}
+
+@keyframes gradient-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

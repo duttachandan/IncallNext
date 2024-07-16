@@ -1,0 +1,287 @@
+@media screen and (max-width: 1024px) {
+  .modal-content p ul li {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Disclamer Section */
+  .contentDisclamer {
+    height: 300px !important;
+    overflow: scroll !important;
+  }
+  /* nav link */
+  .navBar {
+    height: 55px;
+  }
+  .navLogo {
+    font-size: 1.5rem;
+  }
+  .sidebarinsideDiv {
+    transform: scale(0.8);
+    position: relative !important;
+    top: -100px;
+    right: 0;
+  }
+  .close-btn {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+  }
+  /* Header */
+  .header {
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.8), gray) !important;
+    background-color: none;
+    padding-block: 20px;
+  }
+  .header div:first-child h1 {
+    font-size: 1rem;
+  }
+  .header div:first-child h4 {
+    font-size: 0.7rem;
+  }
+
+  /* Accordian Section */
+  .location {
+    transform: scale(0.7);
+    justify-content: evenly;
+  }
+  .location-body {
+    margin-top: 10px;
+    padding: 0;
+  }
+  .accordion-header {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .accordion-header h2 button {
+    font-size: 0.5rem !important;
+  }
+
+  /* posts Section */
+  .allpost {
+    gap: 0 !important;
+  }
+
+  /* Search Section */
+  .centered-div {
+    width: 90vw;
+  }
+
+  /* Disclamer Section */
+  .disclamer {
+    width: 95vw;
+  }
+
+  /* Post Section */
+  .separatePosts {
+    width: 100% !important;
+  }
+
+  /* Post Ad section */
+  .selectCategories {
+    width: 100% !important;
+  }
+
+  .postAdWidth {
+    width: 100% !important;
+  }
+  .inCallWidth {
+    width: 100%;
+  }
+
+  /* Separate Item section */
+
+  .ItemsShortScreen {
+    display: flex !important;
+    z-index: 20;
+    width: 100vw;
+    height: 5vh;
+  }
+  .ItemsLogoBigScreen {
+    display: none !important;
+  }
+  .smallHeading {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  /* modal Text */
+  .textModal {
+    text-align: center !important;
+    font-size: 0.8rem !important;
+  }
+  .modal-content {
+    padding-inline: 5px !important;
+  }
+  .modal-content button {
+    margin-top: 0 !important;
+  }
+  .ModalLogo {
+    width: 50px;
+  }
+  .carousel-wrapper {
+    width: 100% !important;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 1.3rem !important;
+    height: 36px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    /* color:transparent !important; */
+  }
+
+  .carousle-content-wrapper {
+    width: 150% !important;
+    /* height:60% !important; */
+  }
+
+  /* Activity Section */
+  .tableRow {
+    font-size: 0.6rem;
+  }
+  .activityBtn {
+    padding-inline: 10px !important;
+    font-size: 0.8rem;
+  }
+  .addMoneyBtn {
+    font-size: 0.9rem !important;
+  }
+  .OrderBtn {
+    transform: scale(0.8);
+  }
+
+  /* myAds Css */
+  .myAdsTitle {
+    font-size: 1rem;
+  }
+  .myAdsLinks {
+    font-size: 0.6rem !important;
+  }
+  .myAdsButton {
+    font-size: 12px !important;
+    padding-inline: 10px !important;
+    padding-top: 4px !important;
+  }
+  .myAdsText h1 {
+    font-size: 12px !important;
+  }
+  .myAdsText p {
+    font-size: 8px !important;
+  }
+  .myadsBox {
+    height: 190px !important;
+  }
+  .myAddFilterBtn {
+    transform: scale(0.8);
+  }
+  /* Accordion section */
+  .accordion-item h2 button div {
+    font-size: 0.8rem !important;
+    font-weight: 700;
+  }
+  .accordion-header {
+    height: 25px !important;
+  }
+
+  .separateItems-container::after {
+    background-repeat: no-repeat;
+    background-clip: inherit;
+    background-blend-mode: color-dodge;
+    object-fit: contain;
+    height: 65%;
+    width: 161%;
+    top: 20%;
+    left: -16%;
+  }
+  .Errorpage {
+    transform: scale(0.5);
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* Profile Section */
+  .profileImage {
+    width: 50px;
+    height: 50px;
+  }
+  #termsCondition {
+    margin-bottom: 27px;
+  }
+  /* modal Section */
+  .modalBtn {
+    padding-inline: 20px;
+    font-size: 1.8rem;
+  }
+  .contentModal {
+    padding-inline: 20px;
+  }
+
+  /* Activity section */
+  .fsActivity {
+    font-size: 0.7rem;
+  }
+  .Allpost {
+    align-items: initial !important;
+  }
+  .allpost {
+    padding-top: 0 !important;
+  }
+  .modal-content {
+    height: fit-content !important;
+    width: 90% !important;
+  }
+  .overlay-black {
+    height: 83% !important;
+  }
+  .headModal {
+    font-size: 0.7rem !important;
+    text-align: center;
+  }
+  .textdescModal {
+    font-size: 0.5rem !important;
+  }
+  .modal-buttons button {
+    transform: scale(0.6);
+    padding-inline: 50px;
+  }
+  .smallHeading {
+    font-size: 0.5rem;
+  }
+  .PostsTitle {
+    font-size: 1.3rem;
+  }
+  /* Ads Page */
+  .SearchBar {
+    width: 150px !important;
+  }
+  .myadsBox {
+    height: "100px" !important;
+  }
+  .myAddFilterBtn {
+    transform: scale(0.6);
+  }
+  .separateItems-container::after {
+    height: 65%;
+    width: 161%;
+    top: 20%;
+    left: -40%;
+  }
+  .Errorpage {
+    transform: scale(0.4);
+    height: 220px;
+  }
+}
